@@ -5,8 +5,7 @@ class Song
   attr_accessor :name, :artist, :genre
   def initialize
     @@count += 1
-    @@genres.include?(:genre) ? @@genres << :genre : returns
-    
+    @@genres.include?(:genre) ? @@genres << :genre : return
   end
 
   def self.count
@@ -14,6 +13,6 @@ class Song
   end
 
   def genres
-    
+
 
 end
