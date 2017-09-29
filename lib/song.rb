@@ -1,12 +1,11 @@
 class Song
-
+  attr_accessor :name, :artist, :genres
   @@count = 0
   @@artists = []
   @@genres = []
-
+  
 
   def initialize
-    attr_accessor :name
     @@count += 1
     @@genres.include?(:genre) ? @@genres << :genre : return
   end
